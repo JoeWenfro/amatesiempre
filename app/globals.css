@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-gray-800 antialiased;
+    scroll-padding-top: 5rem;
+  }
+}
+
+@layer components {
+  /* Glass Navbar Effect - iOS Style */
+  .glass-navbar {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(143, 174, 158, 0.1);
+    box-shadow: 
+      0 8px 32px rgba(143, 174, 158, 0.12),
+      0 0 0 1px rgba(255, 255, 255, 0.5) inset,
+      0 1px 0 rgba(143, 174, 158, 0.05);
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-sage-400 text-white rounded-full font-medium text-sm uppercase tracking-wider shadow-lg hover:bg-sage-500 hover:shadow-xl transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 bg-white text-sage-500 border-2 border-sage-400 rounded-full font-medium text-sm uppercase tracking-wider hover:bg-sage-50 transition-all duration-300;
+  }
+
+  .card-modern {
+    @apply bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 border border-sage-50;
+  }
+}
