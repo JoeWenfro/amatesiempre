@@ -28,9 +28,9 @@ export default function Prices() {
       badge: 'Popular',
       highlight: true,
       packages: [
-        { sessions: 1, price: 'S/ 200', original: null },
-        { sessions: 4, price: 'S/ 750', original: 'S/ 800', discount: '-6%', recommended: true }
-      ],
+  { sessions: 1, price: 'S/ 50.00', original: 'S/ 200', discount: '-75%' },
+  { sessions: 4, price: 'S/ 180.00', original: 'S/ 750', discount: '-76%', recommended: true }
+],
       paymentInfo: 'Se paga por adelantado',
       features: ['Google Meet', 'Horario flexible', 'Lunes a Sábado']
     },
@@ -67,7 +67,6 @@ export default function Prices() {
   return (
     <>
       <section id="precios" className="section-padding bg-gradient-to-b from-white via-cream to-white relative overflow-hidden">
-        {/* Animated background */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             animate={{
@@ -88,7 +87,6 @@ export default function Prices() {
         </div>
 
         <div className="container-custom relative z-10">
-          {/* Header */}
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 30 }}
@@ -112,7 +110,6 @@ export default function Prices() {
             </p>
           </motion.div>
 
-          {/* Price Cards */}
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
             {priceOptions.map((option, index) => (
               <motion.div
@@ -123,7 +120,6 @@ export default function Prices() {
                 whileHover={{ y: -15, scale: 1.02 }}
                 className={`relative group ${option.highlight ? 'md:-mt-4' : ''}`}
               >
-                {/* Badge */}
                 {option.badge && (
                   <motion.div
                     initial={{ scale: 0 }}
@@ -137,10 +133,11 @@ export default function Prices() {
                   </motion.div>
                 )}
 
-                <div className={`bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 h-full border-2 ${
-                  option.highlight ? 'border-sage-400' : 'border-sage-100 hover:border-sage-300'
-                }`}>
-                  {/* Icon & Title */}
+                <div
+                  className={`bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 h-full border-2 ${
+                    option.highlight ? 'border-sage-400' : 'border-sage-100 hover:border-sage-300'
+                  }`}
+                >
                   <div className="text-center mb-6">
                     <motion.div
                       whileHover={{ scale: 1.2, rotate: 360 }}
@@ -149,7 +146,10 @@ export default function Prices() {
                         option.highlight ? 'bg-sage-400' : 'bg-sage-100'
                       }`}
                     >
-                      <option.icon className={`w-8 h-8 ${option.highlight ? 'text-white' : 'text-sage-500'}`} strokeWidth={1.5} />
+                      <option.icon
+                        className={`w-8 h-8 ${option.highlight ? 'text-white' : 'text-sage-500'}`}
+                        strokeWidth={1.5}
+                      />
                     </motion.div>
                     <h3 className="text-2xl font-serif text-sage-500 mb-1">
                       {option.title}
@@ -158,7 +158,6 @@ export default function Prices() {
                     <p className="text-xs text-sage-400 mt-2">{option.paymentInfo}</p>
                   </div>
 
-                  {/* Features */}
                   <div className="mb-6 space-y-2">
                     {option.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center text-sm text-gray-600">
@@ -168,7 +167,6 @@ export default function Prices() {
                     ))}
                   </div>
 
-                  {/* Packages */}
                   <div className="space-y-3 mb-6">
                     {option.packages.map((pkg, idx) => (
                       <div
@@ -208,7 +206,6 @@ export default function Prices() {
                     ))}
                   </div>
 
-                  {/* CTA Button */}
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -223,7 +220,6 @@ export default function Prices() {
             ))}
           </div>
 
-          {/* Info adicional */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -256,7 +252,6 @@ export default function Prices() {
         </div>
       </section>
 
-      {/* MODALES */}
       <PreConsultaModal
         isOpen={showPreConsulta}
         onClose={() => setShowPreConsulta(false)}

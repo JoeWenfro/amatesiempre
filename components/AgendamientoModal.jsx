@@ -17,9 +17,9 @@ export default function AgendamientoModal({ isOpen, onClose, preConsultaData }) 
       badge: 'Popular',
       info: 'Se paga por adelantado',
       paquetes: [
-        { sessions: 1, price: 'S/ 50', original: null },
-        { sessions: 4, price: 'S/ 180', original: null, recommended: true }
-      ]
+  { sessions: 1, price: 'S/ 50.00', original: 'S/ 200', discount: '-75%' },
+  { sessions: 4, price: 'S/ 180.00', original: 'S/ 750', discount: '-76%', recommended: true }
+]
     },
     {
       id: 'presencial',
