@@ -65,7 +65,7 @@ export default function About() {
   ]
 
   return (
-    <section id="sobre-mi" className="section-padding bg-gradient-to-br from-slate-50 via-lavender-50 to-sage-50 relative overflow-hidden">
+    <section id="sobre-mi" className="section-padding bg-gradient-to-br from-lavender-50 via-white to-sage-50 relative overflow-hidden">
       {/* Decorative animated background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -188,7 +188,7 @@ export default function About() {
                     </h3>
                   </div>
                   
-                  <div className="space-y-5 text-gray-800 leading-relaxed text-base prose plavender-sm">
+                  <div className="space-y-5 text-gray-800 leading-relaxed text-base prose prose-sm">
                     <motion.p variants={itemVariants} className="text-lg leading-relaxed">
                       Nací en <span className="font-bold text-lavender-500">Ilo, Perú</span> y, como muchas personas, crecí en un entorno que fue moldeando quién soy hoy.
                     </motion.p>

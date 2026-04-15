@@ -32,7 +32,7 @@ module.exports = {
           800: '#5b21b6',
           900: '#4c1d95',
         },
-        cream: '#fef3c7',
+        cream: '#f5f3ff',
       },
       fontFamily: {
         serif: ['var(--font-serif)', 'Georgia', 'serif'],
