@@ -66,7 +66,7 @@ export default function Footer() {
         <div className="border-t border-sage-400 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sage-100 text-sm">
             <p>© {currentYear} AMATESIEMPRE. Todos los derechos reservados.</p>
-            <p>C.M.P. 65892 • Nicole Valdivia Carazas</p>
+            <p>C.Ps.P. 65892 • Nicole Valdivia Carazas</p>
           </div>
         </div>
       </div>

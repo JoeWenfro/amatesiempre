@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 
 export const metadata = {
   title: 'AMATESIEMPRE | Psicología',
-  description: 'Psicología basada en evidencia, con acompañamiento humano y a tu ritmo. Nicole Valdivia Carazas, psicóloga colegiada C.M.P. 65892.',
+  description: 'Psicología basada en evidencia, con acompañamiento humano y a tu ritmo. Nicole Valdivia Carazas, psicóloga colegiada C.Ps.P. 65892.',
   keywords: 'psicología, terapia, salud mental, acompañamiento psicológico, TCC',
 }
 

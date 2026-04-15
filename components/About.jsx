@@ -49,7 +49,7 @@ export default function About() {
   const credentials = [
     {
       icon: Award,
-      title: 'C.M.P. 65892',
+      title: 'C.Ps.P. 65892',
       subtitle: 'Psicóloga Colegiada'
     },
     {
