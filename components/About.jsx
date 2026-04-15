@@ -440,3 +440,6 @@ export default function About() {
           </motion.div>
         )}
       </AnimatePresence>
+    </section>
+  )
+}
