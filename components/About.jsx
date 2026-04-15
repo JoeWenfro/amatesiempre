@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Award, Heart, Sparkles, GraduationCap, Brain, Shield } from 'lucide-react'
+import Image from 'next/image'
 
 export default function About() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
@@ -132,13 +133,13 @@ export default function About() {
             ))}
           </div>
 
-          {/* Main Story - 2 Column Layout */}
-          <motion.div variants={itemVariants} className="max-w-6xl mx-auto mb-12">
-            <div className="grid md:grid-cols-2 gap-8">
+          {/* Main Story - 3 Column Layout with Photo */}
+          <motion.div variants={itemVariants} className="max-w-7xl mx-auto mb-12">
+            <div className="grid md:grid-cols-3 gap-8">
               {/* Left: Personal Story */}
               <motion.div 
                 whileHover={{ scale: 1.02, y: -5 }}
-                className="bg-white rounded-3xl p-8 shadow-lg border-2 border-sage-100 hover:border-sage-300 hover:shadow-2xl transition-all duration-300"
+                className="md:col-span-2 bg-white rounded-3xl p-8 shadow-lg border-2 border-sage-100 hover:border-sage-300 hover:shadow-2xl transition-all duration-300"
               >
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="w-12 h-12 bg-sage-400 rounded-full flex items-center justify-center">
@@ -149,54 +150,92 @@ export default function About() {
                   </h3>
                 </div>
                 
-                <div className="space-y-4 text-gray-700 leading-relaxed">
+                <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base">
                   <p>
-                    <span className="font-medium text-sage-500">Nací en Ilo</span> y, como muchas personas, 
-                    crecí atravesando momentos que no siempre fueron fáciles.
+                    Nací en <span className="font-medium text-sage-500">Ilo, Perú</span> y, como muchas personas, crecí en un entorno que fue moldeando quién soy hoy.
+                  </p>
+                  <p>
+                    Desde muy joven aprendí a observar, sentir y cuestionarme sobre lo que pasaba dentro de mí y a mi alrededor.
+                  </p>
+                  <p>
+                    Hubo etapas en las que me sentí confundida, con emociones que no sabía cómo entender ni cómo expresar.
                   </p>
                   <div className="bg-sage-50 rounded-2xl p-4 border-l-4 border-sage-400">
-                    <p className="italic text-sage-600">
-                      Sentir no es un error, es parte de crecer
+                    <p className="italic text-sage-600 font-medium">
+                      Con el tiempo aprendí algo importante: sentir no es un error, es parte de crecer.
                     </p>
                   </div>
                   <p>
-                    Hoy soy una adulta funcional, consciente y <span className="font-medium text-sage-500">agradecida 
-                    con mis abuelos y mi familia</span>, que fueron un soporte emocional importante.
+                    También atravesé momentos de desánimo que me llevaron a conocerme mejor y a entender que <span className="font-medium text-sage-500">pedir ayuda también es un acto de valentía</span>.
                   </p>
+                  <p>
+                    Hoy soy una adulta consciente y agradecida con mi historia, especialmente con <span className="font-medium text-sage-500">mis abuelos y mi familia</span>, quienes fueron un soporte emocional importante.
+                  </p>
+                  <p>
+                    Todo lo vivido no me define, pero sí me permitió desarrollar algo esencial en mi trabajo: <span className="font-medium text-sage-500">acompañar desde la empatía, la paciencia y el respeto</span>.
+                  </p>
+                  <div className="bg-white border-2 border-sage-200 rounded-2xl p-4 text-center">
+                    <p className="text-sage-600">
+                      No desde el <span className="italic">"todo va a estar bien"</span>
+                    </p>
+                    <p className="text-lg font-serif text-sage-500 mt-2">
+                      Sino desde el <span className="italic">"aquí estoy contigo" 🤍</span>
+                    </p>
+                  </div>
                 </div>
               </motion.div>
 
-              {/* Right: Professional Info */}
+              {/* Right: Photo + Credentials */}
               <motion.div 
                 whileHover={{ scale: 1.02, y: -5 }}
-                className="bg-gradient-to-br from-sage-50 to-white rounded-3xl p-8 shadow-lg border-2 border-sage-100 hover:border-sage-300 hover:shadow-2xl transition-all duration-300"
+                className="flex flex-col gap-6 h-fit sticky top-20"
               >
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-12 h-12 bg-sage-400 rounded-full flex items-center justify-center">
-                    <Award className="w-6 h-6 text-white" strokeWidth={1.5} />
+                {/* Photo */}
+                <motion.div 
+                  className="bg-white rounded-3xl p-4 shadow-lg border-2 border-sage-100 hover:border-sage-300 transition-all duration-300 overflow-hidden"
+                  whileHover={{ scale: 1.03 }}
+                >
+                  <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-sage-100">
+                    <Image
+                      src="/nicole-photo.jpg"
+                      alt="Nicole Valdivia Carazas - Psicóloga"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
                   </div>
-                  <h3 className="text-2xl font-serif text-sage-500">
-                    Formación
-                  </h3>
-                </div>
+                </motion.div>
 
-                <div className="space-y-4 text-gray-700 leading-relaxed">
-                  <p>
-                    <span className="font-medium text-sage-500">Nicole Valdivia Carazas</span>
-                    <br />
-                    <span className="text-sm text-gray-500">Psicóloga colegiada y habilitada</span>
-                  </p>
-                  
-                  <div className="bg-white rounded-2xl p-4 border-l-4 border-sage-400">
-                    <p className="font-bold text-sage-500">C.M.P. 65892</p>
-                    <p className="text-sm text-gray-600 mt-1">Fundadora de AMATESIEMPRE</p>
+                {/* Credentials Card */}
+                <motion.div 
+                  className="bg-gradient-to-br from-sage-50 to-white rounded-3xl p-6 shadow-lg border-2 border-sage-100 hover:border-sage-300 hover:shadow-2xl transition-all duration-300"
+                >
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-10 h-10 bg-sage-400 rounded-full flex items-center justify-center">
+                      <Award className="w-5 h-5 text-white" strokeWidth={1.5} />
+                    </div>
+                    <h3 className="text-xl font-serif text-sage-500">
+                      Formación
+                    </h3>
                   </div>
 
-                  <p className="text-sm">
-                    Trabajo desde la <span className="font-medium text-sage-500">Terapia Cognitivo Conductual (TCC)</span>, 
-                    respaldada por evidencia científica.
-                  </p>
-                </div>
+                  <div className="space-y-3 text-gray-700 text-sm">
+                    <p>
+                      <span className="font-medium text-sage-500">Nicole Valdivia Carazas</span>
+                      <br />
+                      <span className="text-xs text-gray-500">Psicóloga habilitada</span>
+                    </p>
+                    
+                    <div className="bg-white rounded-2xl p-3 border-l-4 border-sage-400">
+                      <p className="font-bold text-sage-500 text-sm">C.Ps.P. 65892</p>
+                      <p className="text-xs text-gray-600 mt-1">Fundadora de AMATESIEMPRE</p>
+                    </div>
+
+                    <p className="text-xs leading-relaxed">
+                      Especialista en <span className="font-medium text-sage-500">Terapia Cognitivo Conductual (TCC)</span>
+                    </p>
+                  </div>
+                </motion.div>
               </motion.div>
             </div>
           </motion.div>
