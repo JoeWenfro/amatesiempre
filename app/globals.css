@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --brand-teal: #0d9488;
+    --brand-lavender: #a78bfa;
+    --brand-cream: #fef3c7;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -19,11 +25,11 @@
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(143, 174, 158, 0.1);
+    border: 1px solid rgba(13, 148, 136, 0.12);
     box-shadow: 
-      0 8px 32px rgba(143, 174, 158, 0.12),
+      0 8px 32px rgba(13, 148, 136, 0.14),
       0 0 0 1px rgba(255, 255, 255, 0.5) inset,
-      0 1px 0 rgba(143, 174, 158, 0.05);
+      0 1px 0 rgba(167, 139, 250, 0.08);
   }
 
   .glass-effect {
@@ -41,11 +47,11 @@
   }
 
   .btn-primary {
-    @apply px-8 py-4 bg-sage-400 text-white rounded-full font-medium text-sm uppercase tracking-wider shadow-lg hover:bg-sage-500 hover:shadow-xl transition-all duration-300;
+    @apply px-8 py-4 bg-sage-600 text-white rounded-full font-medium text-sm uppercase tracking-wider shadow-lg hover:bg-sage-700 hover:shadow-xl transition-all duration-300;
   }
 
   .btn-secondary {
-    @apply px-8 py-4 bg-white text-sage-500 border-2 border-sage-400 rounded-full font-medium text-sm uppercase tracking-wider hover:bg-sage-50 transition-all duration-300;
+    @apply px-8 py-4 bg-white text-lavender-600 border-2 border-lavender-300 rounded-full font-medium text-sm uppercase tracking-wider hover:bg-lavender-50 transition-all duration-300;
   }
 
   .card-modern {

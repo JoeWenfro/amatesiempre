@@ -65,7 +65,7 @@ export default function About() {
   ]
 
   return (
-    <section id="sobre-mi" className="section-padding bg-gradient-to-br from-slate-50 via-rose-50 to-sage-50 relative overflow-hidden">
+    <section id="sobre-mi" className="section-padding bg-gradient-to-br from-slate-50 via-lavender-50 to-sage-50 relative overflow-hidden">
       {/* Decorative animated background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -76,7 +76,7 @@ export default function About() {
             y: [0, 30, 0]
           }}
           transition={{ duration: 25, repeat: Infinity }}
-          className="absolute -top-40 -right-40 w-80 h-96 bg-rose-200 rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-80 h-96 bg-lavender-200 rounded-full blur-3xl"
         />
         <motion.div
           animate={{ 
@@ -94,7 +94,7 @@ export default function About() {
             opacity: [0.08, 0.2, 0.08]
           }}
           transition={{ duration: 28, repeat: Infinity, delay: 1 }}
-          className="absolute top-1/2 right-1/4 w-72 h-72 bg-amber-100 rounded-full blur-3xl"
+          className="absolute top-1/2 right-1/4 w-72 h-72 bg-sage-100 rounded-full blur-3xl"
         />
       </div>
 
@@ -113,20 +113,20 @@ export default function About() {
               className="inline-block mb-6"
             >
               <div className="relative">
-                <Heart className="w-16 h-16 text-rose-400 mx-auto" strokeWidth={1} fill="currentColor" />
+                <Heart className="w-16 h-16 text-lavender-400 mx-auto" strokeWidth={1} fill="currentColor" />
                 <motion.div
                   animate={{ scale: [1, 1.3, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="absolute inset-0 bg-rose-400 rounded-full blur-2xl opacity-30 -z-10"
+                  className="absolute inset-0 bg-lavender-400 rounded-full blur-2xl opacity-30 -z-10"
                 />
               </div>
             </motion.div>
-            <motion.h2 className="text-5xl md:text-6xl font-serif text-sage-600 mb-4 bg-gradient-to-r from-sage-600 via-rose-500 to-sage-600 bg-clip-text text-transparent">
+            <motion.h2 className="text-5xl md:text-6xl font-serif text-sage-600 mb-4 bg-gradient-to-r from-sage-600 via-lavender-500 to-sage-600 bg-clip-text text-transparent">
               Sobre mí
             </motion.h2>
             <motion.div 
               layoutId="underline"
-              className="w-24 h-1.5 bg-gradient-to-r from-rose-400 via-sage-400 to-rose-400 mx-auto rounded-full"
+              className="w-24 h-1.5 bg-gradient-to-r from-lavender-400 via-sage-400 to-lavender-400 mx-auto rounded-full"
               animate={{ width: [60, 96, 60] }}
               transition={{ duration: 4, repeat: Infinity }}
             />
@@ -141,18 +141,18 @@ export default function About() {
                 whileHover={{ scale: 1.08, y: -15 }}
                 className="group"
               >
-                <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 border-2 border-sage-100/50 hover:border-rose-300 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-2xl h-full overflow-hidden">
+                <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 border-2 border-sage-100/50 hover:border-lavender-300 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-2xl h-full overflow-hidden">
                   {/* Gradient background on hover */}
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-br from-rose-50 to-sage-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute inset-0 bg-gradient-to-br from-lavender-50 to-sage-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     initial={{ opacity: 0 }}
                   />
                   <motion.div
                     whileHover={{ rotate: 360, scale: 1.3 }}
                     transition={{ duration: 0.8 }}
-                    className="w-16 h-16 bg-gradient-to-br from-rose-100 to-sage-100 rounded-2xl flex items-center justify-center mb-6 group-hover:from-rose-200 group-hover:to-sage-200 transition-all relative z-10"
+                    className="w-16 h-16 bg-gradient-to-br from-lavender-100 to-sage-100 rounded-2xl flex items-center justify-center mb-6 group-hover:from-lavender-200 group-hover:to-sage-200 transition-all relative z-10"
                   >
-                    <item.icon className="w-8 h-8 text-rose-500" strokeWidth={1.5} />
+                    <item.icon className="w-8 h-8 text-lavender-500" strokeWidth={1.5} />
                   </motion.div>
                   <h3 className="text-xl font-serif text-sage-600 mb-3 relative z-10">
                     {item.title}
@@ -173,13 +173,13 @@ export default function About() {
                 whileHover={{ scale: 1.02, y: -8 }}
                 className="md:col-span-2 relative"
               >
-                <div className="absolute -inset-1 bg-gradient-to-br from-rose-200 via-sage-200 to-amber-200 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-all duration-300" />
-                <div className="relative bg-white/85 backdrop-blur-sm rounded-3xl p-10 shadow-xl border-2 border-white/50 hover:border-rose-300/50 transition-all duration-300">
+                <div className="absolute -inset-1 bg-gradient-to-br from-lavender-200 via-sage-200 to-sage-200 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-all duration-300" />
+                <div className="relative bg-white/85 backdrop-blur-sm rounded-3xl p-10 shadow-xl border-2 border-white/50 hover:border-lavender-300/50 transition-all duration-300">
                   <div className="flex items-center space-x-4 mb-8">
                     <motion.div
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ duration: 2, repeat: Infinity }}
-                      className="w-14 h-14 bg-gradient-to-br from-rose-400 to-rose-500 rounded-full flex items-center justify-center shadow-lg"
+                      className="w-14 h-14 bg-gradient-to-br from-lavender-400 to-lavender-500 rounded-full flex items-center justify-center shadow-lg"
                     >
                       <Heart className="w-7 h-7 text-white" strokeWidth={1.5} fill="white" />
                     </motion.div>
@@ -188,9 +188,9 @@ export default function About() {
                     </h3>
                   </div>
                   
-                  <div className="space-y-5 text-gray-800 leading-relaxed text-base prose prose-sm">
+                  <div className="space-y-5 text-gray-800 leading-relaxed text-base prose plavender-sm">
                     <motion.p variants={itemVariants} className="text-lg leading-relaxed">
-                      Nací en <span className="font-bold text-rose-500">Ilo, Perú</span> y, como muchas personas, crecí en un entorno que fue moldeando quién soy hoy.
+                      Nací en <span className="font-bold text-lavender-500">Ilo, Perú</span> y, como muchas personas, crecí en un entorno que fue moldeando quién soy hoy.
                     </motion.p>
                     <motion.p variants={itemVariants} className="text-lg leading-relaxed">
                       Desde muy joven aprendí a <span className="font-semibold">observar, sentir y cuestionarme</span> sobre lo que pasaba dentro de mí y a mi alrededor.
@@ -201,9 +201,9 @@ export default function About() {
                     
                     <motion.div 
                       variants={itemVariants}
-                      className="bg-gradient-to-r from-rose-50 to-amber-50 rounded-2xl p-6 border-l-4 border-rose-400 my-6"
+                      className="bg-gradient-to-r from-lavender-50 to-sage-50 rounded-2xl p-6 border-l-4 border-lavender-400 my-6"
                     >
-                      <p className="italic text-rose-700 font-semibold text-lg">
+                      <p className="italic text-lavender-700 font-semibold text-lg">
                         "Con el tiempo aprendí algo importante: <span className="not-italic">sentir no es un error, es parte de crecer.</span>"
                       </p>
                     </motion.div>
@@ -212,7 +212,7 @@ export default function About() {
                       También atravesé momentos de desánimo que me llevaron a <span className="font-semibold">conocerme mejor</span> y a entender que <span className="font-bold text-sage-600">pedir ayuda también es un acto de valentía</span>.
                     </motion.p>
                     <motion.p variants={itemVariants} className="text-lg leading-relaxed">
-                      Hoy soy una adulta consciente y agradecida con mi historia, especialmente con <span className="font-semibold text-rose-500">mis abuelos y mi familia</span>, quienes fueron un soporte emocional importante.
+                      Hoy soy una adulta consciente y agradecida con mi historia, especialmente con <span className="font-semibold text-lavender-500">mis abuelos y mi familia</span>, quienes fueron un soporte emocional importante.
                     </motion.p>
                     <motion.p variants={itemVariants} className="text-lg leading-relaxed">
                       Todo lo vivido no me define, pero sí me permitió desarrollar algo esencial en mi trabajo: <span className="font-bold text-sage-600">acompañar desde la empatía, la paciencia y el respeto</span>.
@@ -220,10 +220,10 @@ export default function About() {
 
                     <motion.div 
                       variants={itemVariants}
-                      className="bg-white border-2 border-rose-200 rounded-2xl p-6 text-center my-6 hover:shadow-lg transition-all duration-300"
+                      className="bg-white border-2 border-lavender-200 rounded-2xl p-6 text-center my-6 hover:shadow-lg transition-all duration-300"
                     >
                       <p className="text-gray-700 mb-2">No desde el <span className="italic text-gray-600">"todo va a estar bien"</span></p>
-                      <p className="text-2xl font-serif text-rose-500 font-bold">
+                      <p className="text-2xl font-serif text-lavender-500 font-bold">
                         Sino desde el "aquí estoy contigo" 🤍
                       </p>
                     </motion.div>
@@ -241,12 +241,12 @@ export default function About() {
                   onClick={() => setIsModalOpen(true)}
                   className="cursor-pointer group relative"
                 >
-                  <div className="absolute -inset-1 bg-gradient-to-br from-rose-300 to-sage-300 rounded-3xl blur-lg opacity-50 group-hover:opacity-100 transition-all duration-300" />
+                  <div className="absolute -inset-1 bg-gradient-to-br from-lavender-300 to-sage-300 rounded-3xl blur-lg opacity-50 group-hover:opacity-100 transition-all duration-300" />
                   <motion.div 
-                    className="relative bg-white rounded-3xl p-5 shadow-xl overflow-hidden border-2 border-white/80 hover:border-rose-400 transition-all duration-300"
+                    className="relative bg-white rounded-3xl p-5 shadow-xl overflow-hidden border-2 border-white/80 hover:border-lavender-400 transition-all duration-300"
                     whileHover={{ scale: 1.03 }}
                   >
-                    <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-sage-100 to-rose-100">
+                    <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-sage-100 to-lavender-100">
                       <Image
                         src="/nicole-photo.jpg"
                         alt="Nicole Valdivia Carazas - Psicóloga"
@@ -273,15 +273,15 @@ export default function About() {
                   whileHover={{ scale: 1.03, y: -8 }}
                   className="relative"
                 >
-                  <div className="absolute -inset-1 bg-gradient-to-r from-sage-200 to-amber-200 rounded-3xl blur-lg opacity-30" />
+                  <div className="absolute -inset-1 bg-gradient-to-r from-sage-200 to-sage-200 rounded-3xl blur-lg opacity-30" />
                   <motion.div 
-                    className="relative bg-white/85 backdrop-blur-sm rounded-3xl p-7 shadow-lg border-2 border-white/50 hover:border-rose-300/50 transition-all duration-300"
+                    className="relative bg-white/85 backdrop-blur-sm rounded-3xl p-7 shadow-lg border-2 border-white/50 hover:border-lavender-300/50 transition-all duration-300"
                   >
                     <div className="flex items-center space-x-3 mb-6">
                       <motion.div
                         animate={{ rotate: [0, 360] }}
                         transition={{ duration: 3, repeat: Infinity }}
-                        className="w-12 h-12 bg-gradient-to-br from-rose-400 to-sage-400 rounded-full flex items-center justify-center"
+                        className="w-12 h-12 bg-gradient-to-br from-lavender-400 to-sage-400 rounded-full flex items-center justify-center"
                       >
                         <Award className="w-6 h-6 text-white" strokeWidth={1.5} />
                       </motion.div>
@@ -292,12 +292,12 @@ export default function About() {
 
                     <div className="space-y-4 text-gray-800 text-sm">
                       <motion.div variants={itemVariants}>
-                        <p className="font-bold text-rose-500 text-base">Nicole Valdivia Carazas</p>
+                        <p className="font-bold text-lavender-500 text-base">Nicole Valdivia Carazas</p>
                         <p className="text-xs text-gray-600 mt-1">Psicóloga habilitada</p>
                       </motion.div>
                       
-                      <motion.div variants={itemVariants} className="bg-gradient-to-r from-rose-50 to-amber-50 rounded-2xl p-4 border-l-4 border-rose-400">
-                        <p className="font-bold text-rose-600 text-base">C.Ps.P. 65892</p>
+                      <motion.div variants={itemVariants} className="bg-gradient-to-r from-lavender-50 to-sage-50 rounded-2xl p-4 border-l-4 border-lavender-400">
+                        <p className="font-bold text-lavender-600 text-base">C.Ps.P. 65892</p>
                         <p className="text-xs text-gray-700 mt-2 font-semibold">Fundadora de AMATESIEMPRE</p>
                       </motion.div>
 
@@ -314,8 +314,8 @@ export default function About() {
                   transition={{ duration: 3, repeat: Infinity }}
                   className="relative"
                 >
-                  <div className="bg-gradient-to-r from-rose-100 to-sage-100 rounded-full px-6 py-3 border-2 border-rose-300 text-center shadow-md">
-                    <div className="flex items-center justify-center gap-2 text-rose-600 font-semibold text-sm">
+                  <div className="bg-gradient-to-r from-lavender-100 to-sage-100 rounded-full px-6 py-3 border-2 border-lavender-300 text-center shadow-md">
+                    <div className="flex items-center justify-center gap-2 text-lavender-600 font-semibold text-sm">
                       <Zap className="w-4 h-4 fill-current" />
                       Conectada desde 2020
                     </div>
@@ -335,16 +335,16 @@ export default function About() {
                   variants={itemVariants}
                   className="relative group"
                 >
-                  <div className="absolute -inset-1 bg-gradient-to-r from-rose-200 to-sage-200 rounded-3xl blur-lg opacity-40 group-hover:opacity-100 transition-all duration-300" />
+                  <div className="absolute -inset-1 bg-gradient-to-r from-lavender-200 to-sage-200 rounded-3xl blur-lg opacity-40 group-hover:opacity-100 transition-all duration-300" />
                   <motion.div
-                    className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border-2 border-white/70 text-center hover:border-rose-400 transition-all duration-300"
+                    className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border-2 border-white/70 text-center hover:border-lavender-400 transition-all duration-300"
                   >
                     <motion.div
                       whileHover={{ scale: 1.3, rotate: 360 }}
                       transition={{ duration: 0.8 }}
-                      className="w-20 h-20 mx-auto mb-5 bg-gradient-to-br from-rose-100 to-sage-100 rounded-2xl flex items-center justify-center"
+                      className="w-20 h-20 mx-auto mb-5 bg-gradient-to-br from-lavender-100 to-sage-100 rounded-2xl flex items-center justify-center"
                     >
-                      <cred.icon className="w-10 h-10 text-rose-500" strokeWidth={1.5} />
+                      <cred.icon className="w-10 h-10 text-lavender-500" strokeWidth={1.5} />
                     </motion.div>
                     <h4 className="font-bold text-lg text-sage-600 mb-2">{cred.title}</h4>
                     <p className="text-sm text-gray-700 font-medium">{cred.subtitle}</p>
@@ -361,15 +361,15 @@ export default function About() {
           >
             <motion.div
               whileHover={{ scale: 1.08, y: -5 }}
-              className="inline-flex items-center space-x-3 bg-white/70 backdrop-blur-sm px-10 py-6 rounded-full border-2 border-rose-300 shadow-xl hover:shadow-2xl hover:border-rose-500 transition-all duration-300 bg-gradient-to-r from-white via-rose-50 to-white"
+              className="inline-flex items-center space-x-3 bg-white/70 backdrop-blur-sm px-10 py-6 rounded-full border-2 border-lavender-300 shadow-xl hover:shadow-2xl hover:border-lavender-500 transition-all duration-300 bg-gradient-to-r from-white via-lavender-50 to-white"
             >
               <motion.div
                 animate={{ rotate: [0, 360] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
-                <Sparkles className="w-6 h-6 text-rose-400" strokeWidth={1.5} />
+                <Sparkles className="w-6 h-6 text-lavender-400" strokeWidth={1.5} />
               </motion.div>
-              <p className="text-gray-800 font-bold text-lg bg-gradient-to-r from-sage-600 to-rose-500 bg-clip-text text-transparent">
+              <p className="text-gray-800 font-bold text-lg bg-gradient-to-r from-sage-600 to-lavender-500 bg-clip-text text-transparent">
                 Acompaño procesos desde la ciencia y la experiencia humana
               </p>
             </motion.div>
@@ -400,9 +400,9 @@ export default function About() {
                 whileHover={{ scale: 1.1, rotate: 90 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsModalOpen(false)}
-                className="absolute -top-4 -right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xl hover:bg-rose-100 transition-colors z-60 border-2 border-rose-300"
+                className="absolute -top-4 -right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xl hover:bg-lavender-100 transition-colors z-60 border-2 border-lavender-300"
               >
-                <X className="w-6 h-6 text-rose-500" strokeWidth={3} />
+                <X className="w-6 h-6 text-lavender-500" strokeWidth={3} />
               </motion.button>
 
               {/* Photo Container */}

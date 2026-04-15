@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer id="contacto" className="bg-sage-500 text-white">
+    <footer id="contacto" className="bg-gradient-to-br from-sage-800 via-sage-700 to-lavender-700 text-white">
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo y descripción */}
@@ -24,7 +24,7 @@ export default function Footer() {
 
           {/* Contacto */}
           <div>
-            <h3 className="text-xl font-serif mb-4">Contacto</h3>
+            <h3 className="text-xl font-serif mb-4 text-cream">Contacto</h3>
             <div className="space-y-3 text-sage-100">
               <a 
                 href={`https://wa.me/${contactInfo.whatsapp.replace(/\+|\s/g, '')}`}
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Horarios */}
           <div>
-            <h3 className="text-xl font-serif mb-4">Horarios</h3>
+            <h3 className="text-xl font-serif mb-4 text-cream">Horarios</h3>
             <div className="space-y-2 text-sage-100">
               <p><strong className="text-white">Virtual:</strong> Lunes a Sábado</p>
               <p><strong className="text-white">Presencial:</strong> Viernes</p>
@@ -63,8 +63,8 @@ export default function Footer() {
         </div>
 
         {/* Separador */}
-        <div className="border-t border-sage-400 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sage-100 text-sm">
+        <div className="border-t border-white/25 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-sage-100 text-sm">
             <p>© {currentYear} AMATESIEMPRE. Todos los derechos reservados.</p>
             <p>C.Ps.P. 65892 • Nicole Valdivia Carazas</p>
           </div>
